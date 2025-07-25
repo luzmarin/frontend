@@ -1,0 +1,227 @@
+.cabecera{
+    position: relative;
+}
+.cabecera-titular{
+    position: absolute;
+    top: 10rem;
+    right: 8rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 8em;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    color: white;
+}
+.cabecera-fechas{
+    position: absolute;
+    top: 18rem;
+    right:8rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    color: white;
+}
+.cabecera-fechaVuelta{
+    position: absolute;
+    top: 21rem;
+    right:8rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    color: white;
+}
+.catalogo-div{
+    width: 80%;
+    min-height: 100px;
+
+    border: 0.1rem solid black ;
+    border-radius: 2rem;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 1rem;
+    left: 10rem;
+
+    gap: 2rem;
+}
+.catalogo-viajes{
+    width: 95%;
+
+    border: 0.1rem solid black ;
+    border-radius: 6rem;
+
+    padding: 5rem;
+
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    justify-content: center;
+    align-content: center;
+
+    position: relative;
+    left: 2.5rem;
+    top: 3rem;
+
+    gap: 5rem;
+}
+.catalogo-viajes-filter{
+    background-color: rgb(229, 215, 241);
+    padding: 0.5rem;
+    border: 0.05rem solid black;
+}
+.catalogo-viajes-img{
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+}
+.catalogo-viajes-div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+.catalogo-viajes-p{
+    font-size: 0.8em;
+    padding: 1rem;
+    text-align: left;
+}
+.modalTravel{
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 1rem;
+}
+.modalTravel-div{
+    width: 50%;
+
+    position: relative;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(243, 215, 212);
+    padding: 2rem;
+    border-radius: 8px;
+}
+.modalTravel-cerrar{
+    width: 3%;
+    
+    position: absolute;
+    top: 0.5rem;
+    right: 0.8rem;
+    font-size: 1em;
+    font-weight: bold;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.modalTravel-h2{
+    padding: 2rem;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+}
+.modalTravel-img{
+    width: 40%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2rem;
+}
+.modalTravel-p{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    padding: 2rem;
+}
+.modalTravel-boton{
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.modalTravel-datos{
+    padding: 0.2rem;
+
+    font-weight: bold;
+}
+
+@media (max-width:744px){
+    .cabecera-titular{
+        font-size: 6em;
+        top: 5rem;
+    }
+    .cabecera-fechas{
+        font-size: 1.5em;
+        top: 11rem;
+    }
+    .cabecera-fechaVuelta{
+        font-size: 1.5em;
+        top: 13rem;
+    }
+    .catalogo-div{
+        left: 6rem;
+    }
+    .catalogo-viajes{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        border: none;
+    }
+    .modalTravel-p{
+        font-size: 0.7em;
+    }
+    .modalTravel-h2{
+        font-size: 1.2em;
+    }
+    .modalTravel-img{
+        width: 50%;
+    }
+    .modalTravel-datos{
+        font-size: 0.9em;
+    }
+    .modalTravel-boton{
+        width: 40%;
+    }
+}

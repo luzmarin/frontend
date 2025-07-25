@@ -1,0 +1,126 @@
+.marca{
+    position: relative;
+}
+.marca-nombre{
+    position: absolute;
+    right: 2rem;
+
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+.marca-agencia{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+
+    font-size: 2em;
+    text-transform: capitalize;
+}
+.carrusel{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.carrusel-container{
+    display: flex;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+}
+.carrusel-slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+.carrusel-slide img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/*_____________ @media ________________*/
+/*  Descripción: Estilos para la visualización de la web en diferentes dispositivos.
+Movil, tablet, ordenadores en pantalla grande */
+
+@media (max-width:892px){
+    .marca{
+        font-size: 0.9em;
+    }
+}
+@media (max-width:812px){
+    .marca{
+        font-size: 0.7em;
+    }
+}
+@media (max-width:726px){
+    .marca{
+        font-size: 0.6em;
+    }
+    .marca-agencia{
+        top: 1.2rem;
+    }
+}
+@media (max-width:646px){
+    .marca{
+        font-size: 0.5em;
+    }
+    .marca-agencia{
+        top: 1.2rem;
+    }
+}
+@media (max-width:584px){
+    .marca{
+        font-size: 0.4em;
+    }
+    .marca-agencia{
+        top: 1rem;
+    }
+}
+@media (max-width:540px){
+    .marca{
+        font-size: 0.3em;
+    }
+    .marca-agencia{
+        top: 1rem;
+    }
+}
+@media (max-width:500px){
+    .marca{
+        font-size: 0.6em;
+    }
+    .marca-agencia{
+        top: 1.5rem;
+    }
+}
+@media (max-width:400px){
+    .marca{
+        font-size: 0.5em;
+    }
+}
+@media (max-width:320px){
+    .marca{
+        font-size: 0.4em;
+    }
+    .marca-agencia{
+        top: 1.2rem;
+    }
+}
